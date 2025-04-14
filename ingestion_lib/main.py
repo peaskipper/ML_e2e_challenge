@@ -3,12 +3,6 @@
 ### open lib
 from pathlib import Path
 import pandas as pd
-import gzip
-import graphviz
-import re
-import os
-
-# import pythonplantuml
 
 ### self defined lib
 from ingestion_lib.ingest import ingest_src
@@ -27,7 +21,6 @@ separator = ';'
 # file_name = 'report_2025-04-14_135506'
 # compression = 'gzip'
 # classification  = ['raw']
-
 tbl_key_dict = {
     'categories':['type','category'],
     'records':['date','account','type','category']
@@ -108,7 +101,7 @@ tbl_parsed_dict['fk_checks']['missing_fk_record_count'] = counts_to_remove.astyp
 for key, val in tbl_parsed_dict.items():
     print(key)
     for key2, val2 in val.items():
-        if key2 != 'df':
+        if key2 != 'df' and key2 != 'missing_fk':
             print('\t',key2,': ',val2)
 
 ##### Cleanup
@@ -116,9 +109,11 @@ for key, val in tbl_parsed_dict.items():
 records = records_df[~records_df['category_key'].isin(missing_join_ref)]        # .dropna(axis=1, how='any')
 records = records_df[['record_key', 'category_key', 'account', 'category', 'currency', 'amount', 'ref_currency_amount', 'type','date','transfer']]
 categories = categories_df.drop_duplicates()
+categories = categories_df[['category_key', 'type', 'payment_category', 'subcategory', 'item', 'nature']]
 
-print(f'records : {records.columns.to_list()}')
-print(f'categories: {categories.columns.to_list()}')
+print(f'\n\n####Tables ingested####\n')
+print(f'\trecords : {records.record_key.count().astype(int)} | {records.columns.to_list()}')
+print(f'\tcategories: {categories.category_key.count().astype(int)} | {categories.columns.to_list()}')
 
 # debug
 # x = dupe_check(records_df,'record_key')

@@ -1,0 +1,99 @@
+type;payment_category;subcategory;item;nature;color
+Expenses;Food & Drinks;;;Need;#FF5722
+Expenses;Food & Drinks;Restaurants, bar;;Need;#FF5722
+Expenses;Food & Drinks;Groceries;;Need;#FF5722
+Expenses;Food & Drinks;Fast-food;;Need;#FF5722
+Expenses;Shopping;;;Want;#4FC3F7
+Expenses;Shopping;Clothes & shoes;;Want;#4FC3F7
+Expenses;Shopping;Drug-store, chemist;;Want;#4FC3F7
+Expenses;Shopping;Electronics, accessories;;Want;#4FC3F7
+Expenses;Shopping;Free time;;Want;#4FC3F7
+Expenses;Shopping;Gifts, joy;;Want;#4FC3F7
+Expenses;Shopping;Health and beauty;;Want;#4FC3F7
+Expenses;Shopping;Home, garden;;Want;#4FC3F7
+Expenses;Shopping;Jewels, accessories;;Want;#4FC3F7
+Expenses;Shopping;Kids;;Want;#4FC3F7
+Expenses;Shopping;Pets, animals;;Want;#4FC3F7
+Expenses;Shopping;Stationery, tools;;Want;#4FC3F7
+Expenses;Housing;;;Must;#FFB300
+Expenses;Housing;Energy, utilities;;Must;#FFB300
+Expenses;Housing;Maintenance, repairs;;Must;#FFB300
+Expenses;Housing;Mortgage;;Must;#FFB300
+Expenses;Housing;Property insurance;;Must;#FFB300
+Expenses;Housing;Rent;;Must;#FFB300
+Expenses;Housing;Services;;Must;#FFB300
+Expenses;Transportation;;;Need;#90A4AE
+Expenses;Transportation;Business trips;;Need;#90A4AE
+Expenses;Transportation;Long distance;;Need;#90A4AE
+Expenses;Transportation;Public transport;;Need;#90A4AE
+Expenses;Transportation;Public transport;Metro card;Need;#90A4AE
+Expenses;Transportation;Auto/taxi;;Need;#90A4AE
+Expenses;Vehicle;;;Need;#BA00FF
+Expenses;Vehicle;Fuel;;Need;#BA00FF
+Expenses;Vehicle;Leasing;;Need;#BA00FF
+Expenses;Vehicle;Parking;;Need;#BA00FF
+Expenses;Vehicle;Rentals;;Need;#BA00FF
+Expenses;Vehicle;Vehicle insurance;;Need;#BA00FF
+Expenses;Vehicle;Vehicle maintenance;;Need;#BA00FF
+Expenses;Life & Entertainment;;;Want;#00C853  
+Expenses;Life & Entertainment;Active sport, fitness;;Want;#00C853  
+Expenses;Life & Entertainment;Alcohol, tobacco;;Want;#00C853  
+Expenses;Life & Entertainment;Books, audio, subscriptions;;Want;#00C853  
+Expenses;Life & Entertainment;Charity, gifts;;Want;#00C853  
+Expenses;Life & Entertainment;Movies, culture, sports events;;Want;#00C853  
+Expenses;Life & Entertainment;Education, development;;Want;#00C853  
+Expenses;Life & Entertainment;Health care, doctor;;Want;#00C853  
+Expenses;Life & Entertainment;Hobbies;;Want;#00C853  
+Expenses;Life & Entertainment;Holiday, trips, hotels;;Want;#00C853  
+Expenses;Life & Entertainment;Holiday, trips, hotels;Hotel;Want;#00C853  
+Expenses;Life & Entertainment;Holiday, trips, hotels;Travel;Want;#00C853  
+Expenses;Life & Entertainment;Holiday, trips, hotels;Food & shopping;Want;#00C853  
+Expenses;Life & Entertainment;Holiday, trips, hotels;Activities;Want;#00C853  
+Expenses;Life & Entertainment;Life events;;Want;#00C853  
+Expenses;Life & Entertainment;Lottery, gambling;;Want;#00C853  
+Expenses;Life & Entertainment;TV, Streaming;;Want;#00C853  
+Expenses;Life & Entertainment;Wellness, beauty;;Want;#00C853  
+Expenses;Communication, PC;;;Need;#3F51B5
+Expenses;Communication, PC;Maintenance & repair;;Need;#3F51B5
+Expenses;Communication, PC;Telephone, mobile, internet;;Need;#3F51B5
+Expenses;Communication, PC;Hardware, electronics;;Need;#3F51B5
+Expenses;Communication, PC;Software, apps, games, VPN;;Need;#3F51B5
+Expenses;Financial expenses;;;Must;#00BFA5
+Expenses;Financial expenses;Advisory;;Must;#00BFA5
+Expenses;Financial expenses;Charges, Fees;;Must;#00BFA5
+Expenses;Financial expenses;Child Support;;Must;#00BFA5
+Expenses;Financial expenses;Fines;;Must;#00BFA5
+Expenses;Financial expenses;Insurances;;Must;#00BFA5
+Expenses;Financial expenses;Loan, interests;;Must;#00BFA5
+Expenses;Financial expenses;Taxes;;Must;#00BFA5
+Expenses;Investments;;;Want;#FF4081
+Expenses;Investments;Collections;;Want;#FF4081
+Expenses;Investments;Financial investments;;Want;#FF4081
+Expenses;Investments;Financial investments;MF index;Want;#2E7D32
+Expenses;Investments;Financial investments;MF midcap;Want;#2E7D32
+Expenses;Investments;Financial investments;Equity shortterm;Want;#00ACC1
+Expenses;Investments;Financial investments;Equity midterm;Want;#00ACC1
+Expenses;Investments;Financial investments;Equity longterm;Want;#00ACC1
+Expenses;Investments;Financial investments;Etf bonds;Want;#00ACC1
+Expenses;Investments;Realty;;Want;#FF4081
+Expenses;Investments;Savings;;Want;#FF4081
+Expenses;Investments;Savings;PPF;Want;#FF4081
+Expenses;Investments;Savings;RD;Want;#FF4081
+Expenses;Investments;Savings;FD;Want;#FF4081
+Expenses;Investments;Vehicles, chattels;;Want;#FF4081
+Income;Income;;;Want;#4CAF50
+Income;Income;Checks, coupons;;Want;#4CAF50
+Income;Income;Child Support;;Want;#4CAF50
+Income;Income;Freelance work;;Want;#4CAF50
+Income;Income;Gifts;;Want;#4CAF50
+Income;Income;Interests, dividends;;Want;#4CAF50
+Income;Income;Lending, renting;;Want;#4CAF50
+Income;Income;Lottery, gambling;;Want;#4CAF50
+Income;Income;Refunds (tax, purchase);;Want;#4CAF50
+Income;Income;Rental Expenses;;Want;#4CAF50
+Income;Income;Sale;;Want;#4CAF50
+Income;Income;Wage, invoices;;Want;#4CAF50
+Expenses;Others;;;None;#B0BEC5
+Expenses;Others;Missing;;None;#B0BEC5
+Income;TRANSFER;;;None;#4F7942
+Expenses;TRANSFER;;;None;#4F7942

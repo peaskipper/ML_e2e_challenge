@@ -13,8 +13,7 @@ from ingestion_lib.analyse import parse_dataset, add_key_column, infer_column_ty
 
 ######## Source specific configs
 
-# dir_path = os.getcwd()
-# root_path = os.path.abspath(os.path.join(dir_path, '..'))
+
 src_location = Path(__file__).parent.parent / 'source_files\\'
 extension = '.csv'
 separator = ';'
@@ -106,16 +105,9 @@ for key, val in tbl_parsed_dict.items():
 
 ##### Cleanup
 
-records = records_df[~records_df['category_key'].isin(missing_join_ref)]        # .dropna(axis=1, how='any')
-records = records_df[['record_key', 'category_key', 'account', 'category', 'currency', 'amount', 'ref_currency_amount', 'type','date','transfer']]
+records = records_df[~records_df['category_key'].isin(missing_join_ref)]
 categories = categories_df.drop_duplicates()
-categories = categories_df[['category_key', 'type', 'payment_category', 'subcategory', 'item', 'nature']]
 
 print(f'\n\n####Tables ingested####\n')
 print(f'\trecords : {records.record_key.count().astype(int)} | {records.columns.to_list()}')
 print(f'\tcategories: {categories.category_key.count().astype(int)} | {categories.columns.to_list()}')
-
-# debug
-# x = dupe_check(records_df,'record_key')
-# x = records_df.count().astype(int)
-# print(x)

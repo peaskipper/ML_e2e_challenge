@@ -5,6 +5,7 @@
 
 ### Pre-requisites (including setup for local sparksession)
 
+#### Setup for Pyspark
 Python
 https://www.python.org/downloads/
 Remember to tick set PATH on install.
@@ -42,6 +43,22 @@ py -3.13 -m venv .pyspar_test_env
 pip install pyspark
 pyspark
 .pyspar_test_env\scripts\deactivate
+
+#### Setup for SQL database connection
+Microsoft SQL server
+https://go.microsoft.com/fwlink/?linkid=866658
+
+For SQL database authentication:
+Open SQL Server Manager `SQLServerManager15.msc`
+In network configuration enable TCP/IP and make sure, in IP address TCP port ip11 is 1433.
+
+Install JDBC drivers
+https://learn.microsoft.com/en-us/sql/connect/jdbc/download-microsoft-jdbc-driver-for-sql-server
+Extract and place in C:\
+Update jdbc_jar_path variable in the spark connector notebook to point to this folder. 
+In environment system variables add a new Path to the jdbc auth folder like so `C:\mssql-jdbc\auth\x64\`
+
+Rnu spark_connector.ipynb to validate connection
 
 ### Resolve relative path issues in the notebook
 Use os function to add relative path to current directory

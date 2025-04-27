@@ -38,11 +38,12 @@ http://localhost:4040/
 Pyspark
 https://code.visualstudio.com/
 
-py -3.13 -m venv .pyspar_test_env
-.pyspar_test_env\scripts\activate
-pip install pyspark
-pyspark
-.pyspar_test_env\scripts\deactivate
+Run this in a terminal or cmd window:
+    py -3.13 -m venv .pyspar_test_env
+    .pyspar_test_env\scripts\activate
+    pip install pyspark
+    pyspark
+    .pyspar_test_env\scripts\deactivate
 
 #### Setup for SQL database connection
 Microsoft SQL server
